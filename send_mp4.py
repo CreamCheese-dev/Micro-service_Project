@@ -1,5 +1,4 @@
 import requests
-
 import os
 
 # Define the directory path
@@ -16,7 +15,7 @@ def send_mp4(file_path, endpoint):
     return response
 
 if __name__ == "__main__":
-    file_path = "./video/test_file.mp4"  # Replace this with the path to your MP4 video file
-    endpoint = "127.0.0.1:5000"  # Replace this with the IP address and port where your microservice is running
+    file_path = "./video/test_file.mp4"  # Where video file resides
+    endpoint = "127.0.0.1:5000"  # Destination user
     response = send_mp4(file_path, endpoint)
     print(response.text)

@@ -1,0 +1,10 @@
+Hello!
+
+The MP4TOMP3 microservice operates by receiving a video file, splitting the audio and footage,
+and returning those files to a directory called uploads.
+Then, I simply run my musicPLayer application to see the final results.
+Communication pipeline is conducted via the REST API
+
+Partner sends MP4 file -> MP4TOMP3.py -> store file to UPLOADS folder -> musicPlayer.py reads dir
+
+For testing purposes, the MP4 is located in video and will be channeled through my local machine.
